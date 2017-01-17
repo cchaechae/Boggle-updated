@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -22,7 +23,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private BoogleDictionary dictionary;
-    public static String typedWord = "";
+    private String typedWord = "";
+    StringBuilder mStringBuilder = new StringBuilder("");
+    public ArrayList<String> wordList = new ArrayList<String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -62,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button00)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button00)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -77,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button01)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button01)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -93,7 +98,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button02)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button02)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -109,7 +115,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button03)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button03)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -125,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button10)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button10)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -141,7 +149,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button11)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button11)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -157,7 +166,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button12)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button12)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -173,7 +183,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button13)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button13)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -189,7 +200,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button20)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button20)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -205,7 +217,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button21)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button21)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -222,7 +235,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button22)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button22)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -238,7 +252,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button23)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button23)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -254,7 +269,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button30)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button30)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -270,7 +286,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button31)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button31)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -286,7 +303,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button32)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button32)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -302,7 +320,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                 // add the on button to typedWord String
-                typedWord += ((Button)findViewById(R.id.button33)).getText().toString();
+                typedWord = ((Button)findViewById(R.id.button33)).getText().toString();
+                mStringBuilder.append(typedWord);
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
@@ -312,12 +331,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
+        
 
 
         //load the words.txt file
@@ -366,16 +380,14 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
 
 
-
-
-
     }
 
     public void enter()
     {
-
-       clear();
-
+        String word = mStringBuilder.toString();
+        wordList.add(word);
+        ((TextView)findViewById(R.id.userTyped)).setText(word);
+        mStringBuilder = new StringBuilder(word+"\n");
 
 
     }

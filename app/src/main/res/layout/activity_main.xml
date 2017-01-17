@@ -84,14 +84,15 @@
             android:id="@+id/typingWord"
             android:textSize="40sp"
             android:layout_width="match_parent"
-            android:layout_height="50dp" />
+            android:layout_height="50dp"
+            android:textAlignment="center"/>
 
         <TextView
-            android:text="      User Typed Words"
+            android:text="User Typed Words"
             android:layout_width="match_parent"
             android:id="@+id/userTyped"
             android:layout_height="120dp"
-            android:textSize="30sp" />
+            android:textSize="20dp" />
 
         <LinearLayout
             android:orientation="horizontal"
