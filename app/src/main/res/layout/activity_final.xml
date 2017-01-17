@@ -30,13 +30,22 @@
             android:layout_weight="1">
 
             <TextView
-                android:text="Your Words"
+                android:text="Correct Words"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="14dp"
-                android:id="@+id/typedWords" />
+                android:id="@+id/correctWords" />
+
+            <TextView
+                android:text="Your words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:id="@+id/correct" />
 
         </RelativeLayout>
 
@@ -48,13 +57,21 @@
             android:layout_weight="1">
 
             <TextView
-                android:text="Answer Keys"
+                android:text="Wrong Words"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="14dp"
-                android:id="@+id/answerKey" />
+                android:id="@+id/wrongWords" />
+            <TextView
+                android:text="Your Words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:id="@+id/wrong" />
 
             <Button
                 android:text="Play Again"

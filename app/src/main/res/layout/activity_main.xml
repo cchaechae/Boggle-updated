@@ -21,40 +21,40 @@
         android:layout_weight="0.50">
 
 
-        <Button android:text="1"
+        <Button android:text="a"
             android:id="@+id/button00" />
 
-        <Button android:text="2"
+        <Button android:text="b"
             android:id="@+id/button01" />
 
-        <Button android:text="3"
+        <Button android:text="c"
             android:id="@+id/button02" />
 
-        <Button android:text="4"
+        <Button android:text="d"
             android:id="@+id/button03" />
 
-        <Button android:text="5"
+        <Button android:text="e"
             android:id="@+id/button10" />
 
-        <Button android:text="6"
+        <Button android:text="f"
             android:id="@+id/button11" />
 
-        <Button android:text="7"
+        <Button android:text="g"
             android:id="@+id/button12" />
 
-        <Button android:text="8"
+        <Button android:text="h"
             android:id="@+id/button13" />
 
-        <Button android:text="9"
+        <Button android:text="o"
             android:id="@+id/button20" />
 
-        <Button android:text="10"
+        <Button android:text="s"
             android:id="@+id/button21" />
 
-        <Button android:text="11"
+        <Button android:text="t"
             android:id="@+id/button22" />
 
-        <Button android:text="12"
+        <Button android:text="r"
             android:id="@+id/button23" />
 
         <Button android:text="13"
