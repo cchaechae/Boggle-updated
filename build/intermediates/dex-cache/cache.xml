@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.1.0_4c8091b34d7f0218419916d65d5b28c8557559ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_a51a7e3a8203bfbcd0fe50d0d2d4829c28d5219c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_df3a1e3611c8d5786d62e5692673f164debd6a82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.1.0_b3ab1c8d2955e6dd4e06f1d498db529f497e87d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fd567e94aaf13b7de76259afa4726d261cc13c06">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_29b5e3ac194b980badcd50d37870570fa1da2ed2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_7cfe4770f5c1ad60074bb8d1f74c1beeb202685e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.1.0_55737e1aeb5c98788cc3e1b5bfd65e983c26ea65/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_b24bc604359dbb6375ed20d6c2962bb0e37b5e17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_1ae2e354b5ba59be8ea8395625a8ca7c74da9c9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_c4b1d4c7feacfc11909bee24143a45bcd3d78fe8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6a8eae48b3f0e2ab5f1ea00dc1f00dcf8de9bc7e">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_90f4ad9eed2f259746167182bf7ac64a13a8704e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Desktop/Boggle/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/demouser/Desktop/Boggle/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.1.0_bf31aedfb0e97d50eafc077521fdd0e22a0b492c/classes.dex" />
+    </item>
+
+</items>
