@@ -20,6 +20,8 @@ import android.view.View;
 import android.widget.Button;
 
 
+// hi
+
 public class MainActivity extends AppCompatActivity {
 
     private BoogleDictionary dictionary;
