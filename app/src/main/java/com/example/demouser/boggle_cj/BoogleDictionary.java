@@ -17,6 +17,8 @@ public class BoogleDictionary {
     private ArrayList<String> dictionary = new ArrayList<String>();
     public HashMap<String, Boolean> wordMap = new HashMap<String, Boolean>();
 
+    public ArrayList<String> validList = new ArrayList<String>();
+
     public String correct = "";
     public String wrong = "";
 
@@ -33,6 +35,15 @@ public class BoogleDictionary {
             //from the hardware to the memory
             dictionary.add(word);
         }
+
+        testAdd();
+
+    }
+
+    private void testAdd(){
+
+        validList.add("other");
+        validList.add("about");
     }
 
     /**
@@ -46,7 +57,7 @@ public class BoogleDictionary {
 
     public boolean checkWord(String obj){
 
-        if (dictionary.contains(obj))
+        if (validList.contains(obj))
             return true;
 
         else
@@ -88,5 +99,7 @@ public class BoogleDictionary {
         return wrong;
     }
 
-
+    public ArrayList<String> getValidList() {
+        return validList;
+    }
 }

@@ -46,8 +46,9 @@ public class FinalActivity extends AppCompatActivity {
 
         dictionary.iterate();
 
-        ((TextView)findViewById(R.id.correct)).setText(dictionary.getCorrect());
-        ((TextView)findViewById(R.id.wrong)).setText(dictionary.getWrong());
+        ((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
+        //((TextView)findViewById(R.id.correct)).setText(dictionary.getCorrect());
+        //((TextView)findViewById(R.id.wrong)).setText(dictionary.getWrong());
     }
 
     // reset method, from final activity back to start activity
