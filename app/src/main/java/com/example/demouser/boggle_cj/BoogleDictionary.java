@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -52,6 +53,14 @@ public class BoogleDictionary
 //        for (String words: validList)
 //            System.out.println(words);
 
+    }
+
+    /**
+     * For the testing
+     * @param validList
+     */
+    public BoogleDictionary(ArrayList<String> validList){
+        this.validList = validList;
     }
 
     private void testAdd(){
