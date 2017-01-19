@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * Created by demouser on 1/13/17.
@@ -28,7 +29,8 @@ public class BoogleDictionary {
     public String wrongWords = "";
     public String extraWords = "";
 
-    public char[][] board;
+    public char[][] board = new char[4][4];
+    Random random = new Random();
 
     public BoogleDictionary(InputStream wordListStream) throws IOException
     {
@@ -45,7 +47,19 @@ public class BoogleDictionary {
         //generate a new board
         generateBoard();
         //get a valid list based on the grid
-        validList = generateValidList(board);
+        validList = generateValidList(board, validList);
+
+        for (String words:validList)
+            System.out.println("valid list " + words);
+
+        if (validList.size()<5)
+        {
+            generateBoard();
+            ArrayList<String> newList = new ArrayList<String>();
+            newList=  generateValidList(board, newList);
+            for (String words:newList)
+                System.out.println("new list " + words);
+        }
 
     }
 
@@ -132,7 +146,7 @@ public class BoogleDictionary {
     }
 
 
-    public ArrayList<String> generateValidList(char[][] newBoard)
+    public ArrayList<String> generateValidList(char[][] newBoard, ArrayList<String> inputList)
     {
         if (newBoard == null)
         {
@@ -143,10 +157,10 @@ public class BoogleDictionary {
         {
             for (int j = 0; j < newBoard[0].length; j++)
             {
-                generateList(newBoard, i, j, newBoard[i][j] + "", validList);
+                generateList(newBoard, i, j, newBoard[i][j] + "", inputList);
             }
         }
-        return validList;
+        return inputList;
     }
 
     private void generateList(char[][] newBoard, int i, int j, String prefix, List<String> validWords)
@@ -184,11 +198,16 @@ public class BoogleDictionary {
     // generate a random grid
     public void generateBoard()
     {
-        board = new char[][] { {'l', 'i', 'v', 'e' },
-                {'n', 'x', 'p', 'q' },
-                {'k', 't', 'i', 'w' },
-                {'e', 'f', 'g', 's' },
-        };
+        for (int i = 0; i < 4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                char newChar = (char) (random.nextInt(26) + 'a');
+                board[i][j] = newChar;
+            }
+        }
+
+
     }
 
     public char[][] getBoard()
@@ -206,6 +225,7 @@ public class BoogleDictionary {
         while (lo<=hi)
         {
             int mid = lo + (hi-lo)/2;
+
             String current = list.get(mid);
 
             if (current.startsWith(prefix))
