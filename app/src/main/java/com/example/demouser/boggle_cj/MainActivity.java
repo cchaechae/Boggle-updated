@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private String typedWord = "";
     String result = "";
     public ArrayList<String> validList = new ArrayList<String>();
-    public static String correct = "";
-    public static String wrong = "";
+    public String correct = "";
+    public String wrong = "";
 
 
     @Override
@@ -339,12 +339,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public static String USER_CORRECT = "com.example.demouser.USER_CORRECT";
+    public static String USER_WRONG = "com.example.demouser.Wrong";
+
     // method to go to final Activity
     public void finish()
     {
         showResult();
         clear();
-        startActivity(new Intent(this, FinalActivity.class));
+        Intent finalActivity = new Intent(this, FinalActivity.class);
+        startActivity(finalActivity);
+        finalActivity.putExtra(USER_CORRECT, correct);
+        finalActivity.putExtra(USER_WRONG, wrong);
 
 
     }
@@ -380,7 +386,8 @@ public class MainActivity extends AppCompatActivity {
         dictionary.putWord(typedWord); //wordList.add(word);
         result += typedWord+", ";
         ((TextView)findViewById(R.id.userTyped)).setText(result);
-        typedWord = "";
+        clear();
+
 
     }
 

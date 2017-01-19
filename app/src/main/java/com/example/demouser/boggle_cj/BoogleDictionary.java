@@ -190,7 +190,6 @@ public class BoogleDictionary {
         };
     }
 
-    //getter method
     public char[][] getBoard()
     {
         return board;

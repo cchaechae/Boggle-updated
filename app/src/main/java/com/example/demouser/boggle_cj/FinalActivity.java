@@ -25,6 +25,13 @@ public class FinalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final);
 
+        Intent intent = getIntent();
+        correct = intent.getStringExtra(MainActivity.USER_CORRECT);
+        wrong = intent.getStringExtra(MainActivity.USER_WRONG);
+
+        System.out.println("correct"+ correct);
+        System.out.println("wrong" + wrong);
+
         //load the words.txt file
 //        AssetManager assetManager = getAssets();
 //        try {
