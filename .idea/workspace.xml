@@ -45,18 +45,18 @@
       <file leaf-file-name="BoogleDictionary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/BoogleDictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            <state relative-caret-position="191">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#496#504#0" expanded="true" />
                 <element signature="e#654#671#0" expanded="true" />
                 <element signature="e#796#804#0" expanded="true" />
-                <element signature="e#1743#1751#0" expanded="true" />
-                <element signature="e#4957#4958#0" expanded="true" />
-                <element signature="e#4989#4990#0" expanded="true" />
-                <element signature="e#5333#5334#0" expanded="true" />
-                <element signature="e#5361#5362#0" expanded="true" />
+                <element signature="e#1711#1719#0" expanded="true" />
+                <element signature="e#4864#4865#0" expanded="true" />
+                <element signature="e#4896#4897#0" expanded="true" />
+                <element signature="e#5240#5241#0" expanded="true" />
+                <element signature="e#5268#5269#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +65,7 @@
       <file leaf-file-name="FinalActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/FinalActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="221">
               <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
               <folding />
             </state>
@@ -118,7 +118,7 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
+            <state relative-caret-position="221">
               <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
               <folding>
                 <element signature="e#750#758#0" expanded="true" />
@@ -2344,7 +2344,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3377193" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2631579" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2379,11 +2379,11 @@
             <element signature="e#496#504#0" expanded="true" />
             <element signature="e#654#671#0" expanded="true" />
             <element signature="e#796#804#0" expanded="true" />
-            <element signature="e#1743#1751#0" expanded="true" />
-            <element signature="e#4957#4958#0" expanded="true" />
-            <element signature="e#4989#4990#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5361#5362#0" expanded="true" />
+            <element signature="e#1711#1719#0" expanded="true" />
+            <element signature="e#4864#4865#0" expanded="true" />
+            <element signature="e#4896#4897#0" expanded="true" />
+            <element signature="e#5240#5241#0" expanded="true" />
+            <element signature="e#5268#5269#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2446,56 +2446,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
-          <folding>
-            <element signature="e#750#758#0" expanded="true" />
-            <element signature="e#3841#4405#0" expanded="true" />
-            <element signature="e#4404#4405#0" expanded="true" />
-            <element signature="e#4474#5039#0" expanded="true" />
-            <element signature="e#5038#5039#0" expanded="true" />
-            <element signature="e#5108#5673#0" expanded="true" />
-            <element signature="e#5672#5673#0" expanded="true" />
-            <element signature="e#5742#6307#0" expanded="true" />
-            <element signature="e#6306#6307#0" expanded="true" />
-            <element signature="e#6376#6941#0" expanded="true" />
-            <element signature="e#6940#6941#0" expanded="true" />
-            <element signature="e#7010#7575#0" expanded="true" />
-            <element signature="e#7574#7575#0" expanded="true" />
-            <element signature="e#7644#8209#0" expanded="true" />
-            <element signature="e#8208#8209#0" expanded="true" />
-            <element signature="e#8278#8843#0" expanded="true" />
-            <element signature="e#8842#8843#0" expanded="true" />
-            <element signature="e#8912#9477#0" expanded="true" />
-            <element signature="e#9476#9477#0" expanded="true" />
-            <element signature="e#9546#10111#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
-            <element signature="e#10181#10746#0" expanded="true" />
-            <element signature="e#10745#10746#0" expanded="true" />
-            <element signature="e#10815#11380#0" expanded="true" />
-            <element signature="e#11379#11380#0" expanded="true" />
-            <element signature="e#11449#12014#0" expanded="true" />
-            <element signature="e#12013#12014#0" expanded="true" />
-            <element signature="e#12083#12648#0" expanded="true" />
-            <element signature="e#12647#12648#0" expanded="true" />
-            <element signature="e#12717#13282#0" expanded="true" />
-            <element signature="e#13281#13282#0" expanded="true" />
-            <element signature="e#13351#13916#0" expanded="true" />
-            <element signature="e#13915#13916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/FinalActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2550,20 +2500,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="408" column="0" selection-start-line="408" selection-start-column="0" selection-end-line="408" selection-end-column="0" />
+          <folding>
+            <element signature="e#750#758#0" expanded="true" />
+            <element signature="e#3841#4405#0" expanded="true" />
+            <element signature="e#4404#4405#0" expanded="true" />
+            <element signature="e#4474#5039#0" expanded="true" />
+            <element signature="e#5038#5039#0" expanded="true" />
+            <element signature="e#5108#5673#0" expanded="true" />
+            <element signature="e#5672#5673#0" expanded="true" />
+            <element signature="e#5742#6307#0" expanded="true" />
+            <element signature="e#6306#6307#0" expanded="true" />
+            <element signature="e#6376#6941#0" expanded="true" />
+            <element signature="e#6940#6941#0" expanded="true" />
+            <element signature="e#7010#7575#0" expanded="true" />
+            <element signature="e#7574#7575#0" expanded="true" />
+            <element signature="e#7644#8209#0" expanded="true" />
+            <element signature="e#8208#8209#0" expanded="true" />
+            <element signature="e#8278#8843#0" expanded="true" />
+            <element signature="e#8842#8843#0" expanded="true" />
+            <element signature="e#8912#9477#0" expanded="true" />
+            <element signature="e#9476#9477#0" expanded="true" />
+            <element signature="e#9546#10111#0" expanded="true" />
+            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="e#10181#10746#0" expanded="true" />
+            <element signature="e#10745#10746#0" expanded="true" />
+            <element signature="e#10815#11380#0" expanded="true" />
+            <element signature="e#11379#11380#0" expanded="true" />
+            <element signature="e#11449#12014#0" expanded="true" />
+            <element signature="e#12013#12014#0" expanded="true" />
+            <element signature="e#12083#12648#0" expanded="true" />
+            <element signature="e#12647#12648#0" expanded="true" />
+            <element signature="e#12717#13282#0" expanded="true" />
+            <element signature="e#13281#13282#0" expanded="true" />
+            <element signature="e#13351#13916#0" expanded="true" />
+            <element signature="e#13915#13916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/FinalActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="63" column="93" selection-start-line="63" selection-start-column="93" selection-end-line="63" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/demouser/boggle_cj/BoogleDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="191">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#496#504#0" expanded="true" />
             <element signature="e#654#671#0" expanded="true" />
             <element signature="e#796#804#0" expanded="true" />
-            <element signature="e#1743#1751#0" expanded="true" />
-            <element signature="e#4957#4958#0" expanded="true" />
-            <element signature="e#4989#4990#0" expanded="true" />
-            <element signature="e#5333#5334#0" expanded="true" />
-            <element signature="e#5361#5362#0" expanded="true" />
+            <element signature="e#1711#1719#0" expanded="true" />
+            <element signature="e#4864#4865#0" expanded="true" />
+            <element signature="e#4896#4897#0" expanded="true" />
+            <element signature="e#5240#5241#0" expanded="true" />
+            <element signature="e#5268#5269#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -47,18 +47,19 @@ public class BoogleDictionary {
         //generate a new board
         generateBoard();
         //get a valid list based on the grid
+        //if (validList.size()>5)
         validList = generateValidList(board, validList);
+        //else
 
-        for (String words:validList)
-            System.out.println("valid list " + words);
-
-        if (validList.size()<5)
+        
+        while (validList.size()<5)
         {
             generateBoard();
             ArrayList<String> newList = new ArrayList<String>();
             newList=  generateValidList(board, newList);
-            for (String words:newList)
-                System.out.println("new list " + words);
+
+
+            validList = newList;
         }
 
     }
@@ -222,7 +223,7 @@ public class BoogleDictionary {
         int hi = list.size();
 
         // when lo=hi, thats the target index
-        while (lo<=hi)
+        while (lo<hi)
         {
             int mid = lo + (hi-lo)/2;
 
