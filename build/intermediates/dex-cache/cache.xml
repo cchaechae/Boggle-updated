@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1909f16ef1768cdd48067f83cc40e7c656a0674d">
+        sha1="9a1757550cfd8433993a90b5bab4bbb6ae7226b4">
         <dex dex="/Users/demouser/Desktop/Boggle-updated-colla/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_6e79cc4a382288c80d68de956117a72e2d4993ff/classes.dex" />
     </item>
     <item
@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="64611c3cd772444d1666931decb6fa17918bbc89">
+        sha1="8a09e271e7a4bae441c7b31b7b8bd08db3480e28">
         <dex dex="/Users/demouser/Desktop/Boggle-updated-colla/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1205651d56fdb0d795b044216d73f0162698343e/classes.dex" />
     </item>
 

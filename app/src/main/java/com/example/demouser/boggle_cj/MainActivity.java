@@ -37,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        //load the words.txt file
+        AssetManager assetManager = getAssets();
+        try {
+            InputStream inputStream = assetManager.open("words.txt");
+            dictionary = new BoogleDictionary(inputStream);
+            //use the text file as dictionary
+        } catch (IOException e) {
+            Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
+            toast.show();
+        }
+
+        validList = dictionary.getValidList();
 
         ((Button)findViewById(R.id.finishButton)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +73,32 @@ public class MainActivity extends AppCompatActivity {
                 clear();
             }
         });
+
+        char[][] board = dictionary.getBoard();
+
+        //set the button with board characters
+        ((Button)findViewById(R.id.button00)).setText(String.valueOf(board[0][0]));
+        ((Button)findViewById(R.id.button01)).setText(String.valueOf(board[0][1]));
+        ((Button)findViewById(R.id.button02)).setText(String.valueOf(board[0][2]));
+        ((Button)findViewById(R.id.button03)).setText(String.valueOf(board[0][3]));
+        ((Button)findViewById(R.id.button10)).setText(String.valueOf(board[1][0]));
+        ((Button)findViewById(R.id.button11)).setText(String.valueOf(board[1][1]));
+        ((Button)findViewById(R.id.button12)).setText(String.valueOf(board[1][2]));
+        ((Button)findViewById(R.id.button13)).setText(String.valueOf(board[1][3]));
+        ((Button)findViewById(R.id.button20)).setText(String.valueOf(board[2][0]));
+        ((Button)findViewById(R.id.button21)).setText(String.valueOf(board[2][1]));
+        ((Button)findViewById(R.id.button22)).setText(String.valueOf(board[2][2]));
+        ((Button)findViewById(R.id.button23)).setText(String.valueOf(board[2][3]));
+        ((Button)findViewById(R.id.button30)).setText(String.valueOf(board[3][0]));
+        ((Button)findViewById(R.id.button30)).setText(String.valueOf(board[3][0]));
+        ((Button)findViewById(R.id.button31)).setText(String.valueOf(board[3][1]));
+        ((Button)findViewById(R.id.button32)).setText(String.valueOf(board[3][2]));
+        ((Button)findViewById(R.id.button33)).setText(String.valueOf(board[3][3]));
+
+
+
+
+
 
         // on click listener for all the buttons in the grid
         ((Button)findViewById(R.id.button00)).setOnClickListener(new View.OnClickListener() {
@@ -302,22 +340,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-        //load the words.txt file
-        AssetManager assetManager = getAssets();
-        try {
-            InputStream inputStream = assetManager.open("words.txt");
-            dictionary = new BoogleDictionary(inputStream);
-            //use the text file as dictionary
-        } catch (IOException e) {
-            Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
-            toast.show();
-        }
-
-        validList = dictionary.getValidList();
-
 
     }
 

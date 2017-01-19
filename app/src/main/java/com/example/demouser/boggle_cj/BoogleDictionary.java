@@ -17,6 +17,7 @@ public class BoogleDictionary
 {
 
 
+    private static final int MIN_WORD_LENGTH = 3;
     private ArrayList<String> dictionary = new ArrayList<String>();
     //String: words that user typed; Boolean: whether its in validList, correct ot wrong
     public HashMap<String, Boolean> wordMap = new HashMap<String, Boolean>();
@@ -37,9 +38,8 @@ public class BoogleDictionary
 
         while((line = in.readLine()) != null) {
             String word = line.trim();
-
-
-            dictionary.add(word);
+            if (word.length() >= MIN_WORD_LENGTH)
+                dictionary.add(word);
         }
 
        // testAdd();
@@ -49,8 +49,8 @@ public class BoogleDictionary
         //get a valid list based on the grid
         validList = generateValidList(board);
 
-        for (String words: validList)
-            System.out.println(words);
+//        for (String words: validList)
+//            System.out.println(words);
 
     }
 
@@ -173,7 +173,7 @@ public class BoogleDictionary
     // generate a random grid
     public void generateBoard()
     {
-        board = new char[][] { {'l', 'o', 'v', 'e' },
+        board = new char[][] { {'l', 'i', 'v', 'e' },
                 {'n', 'x', 'p', 'q' },
                 {'k', 't', 'i', 'w' },
                 {'e', 'f', 'g', 's' },
