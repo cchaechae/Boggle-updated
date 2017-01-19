@@ -61,7 +61,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6edd08be6bc6cdcee5f3dbd43f26cf048ee2db0b">
+        sha1="69d5d9fe72361c11737be480308e35c62468aea9">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0dd56b1747637649a5e74429c69aa575674a5010/classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a464497bbb6b3e137eee890007636b8735b23cf1">
+        sha1="677825bac2428b898bf1785e63113359e8c8a0be">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7c8dec82ae5c2257c95c4bc2a591517e313c474c/classes.dex" />
     </item>
     <item

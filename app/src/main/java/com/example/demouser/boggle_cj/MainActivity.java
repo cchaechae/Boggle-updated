@@ -36,6 +36,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ((Button)findViewById(R.id.button00)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button01)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button02)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button03)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button10)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button11)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button12)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button13)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button20)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button21)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button22)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button23)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button30)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button31)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button32)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
 
         //load the words.txt file
         AssetManager assetManager = getAssets();
@@ -379,6 +395,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.button32)).setBackgroundResource(android.R.drawable.btn_default);
         ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
 
+        ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
 
     }
 

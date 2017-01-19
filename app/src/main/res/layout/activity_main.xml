@@ -14,7 +14,7 @@
 
     <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         android:columnCount="4"
         android:orientation="horizontal"
         android:layout_gravity="center"
@@ -96,24 +96,27 @@
         android:id="@+id/ControlField">
 
         <TextView
-            android:text="Typing Word"
             android:fontFamily="casual"
             android:id="@+id/typingWord"
             android:textSize="40sp"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="75dp"
             android:textColor="@color/missed"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="@drawable/text_border"
+            tools:text="Typing Word"
+            />
 
         <TextView
-            android:text="User Typed Words"
             android:fontFamily="casual"
             android:layout_width="match_parent"
             android:id="@+id/userTyped"
             android:layout_height="120dp"
             android:layout_marginTop="10dp"
             android:textColor="@color/colorPrimary"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            tools:text="User Typed Words" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -122,27 +125,30 @@
 
             <Button
                 android:text="Clear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
                 android:id="@+id/clearButton"
                 android:background="@drawable/button_border"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_height="74dp" />
 
             <Button
-                android:text="Enter"
+                android:text="       Enter       "
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:id="@+id/enterButton"
                 android:background="@drawable/button_border"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="24sp" />
 
             <Button
                 android:text="Finish"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="74dp"
                 android:id="@+id/finishButton"
                 android:background="@drawable/button_border"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
