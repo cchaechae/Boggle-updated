@@ -3,24 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/Users/demouser/Boggle-updated/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e5fc91b94a2b727491916c4e6bd9ec73de24248a">
-        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7c8dec82ae5c2257c95c4bc2a591517e313c474c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_671a8301c5def0f6c31717146af52ce01a915861/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -36,15 +18,6 @@
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.1.0_d57f2d7243e313105ee29de73f157130664eba6a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/demouser/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_df3a1e3611c8d5786d62e5692673f164debd6a82/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,21 +57,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/demouser/Boggle-updated/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c80a1968589728dac401ce05c4e12894f5ed536e">
+        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0dd56b1747637649a5e74429c69aa575674a5010/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Boggle-updated/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffdfd1f99ce4a3938f420afd9b76b638e718b820">
+        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7c8dec82ae5c2257c95c4bc2a591517e313c474c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_671a8301c5def0f6c31717146af52ce01a915861/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/demouser/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.1.0_df3a1e3611c8d5786d62e5692673f164debd6a82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.1.0_00228c19ea5bf3af2f92d9427144dff1f7c8fb05/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/demouser/Boggle-updated/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b4934d2d8c3bc25a8cfe2a385c737f89a23d04a4">
-        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0dd56b1747637649a5e74429c69aa575674a5010/classes.dex" />
     </item>
     <item
         is-multidex="true"
