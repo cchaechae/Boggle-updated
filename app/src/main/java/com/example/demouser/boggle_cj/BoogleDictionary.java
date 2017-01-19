@@ -14,12 +14,10 @@ import java.util.Map;
  * Created by demouser on 1/13/17.
  */
 
-public class BoogleDictionary
-{
-
+public class BoogleDictionary {
 
     private static final int MIN_WORD_LENGTH = 3;
-    private ArrayList<String> dictionary = new ArrayList<String>();
+    private ArrayList<String> list = new ArrayList<String>();
     //String: words that user typed; Boolean: whether its in validList, correct ot wrong
     public HashMap<String, Boolean> wordMap = new HashMap<String, Boolean>();
 
@@ -40,18 +38,13 @@ public class BoogleDictionary
         while((line = in.readLine()) != null) {
             String word = line.trim();
             if (word.length() >= MIN_WORD_LENGTH)
-                dictionary.add(word);
+                list.add(word);
         }
-
-       // testAdd();
 
         //generate a new board
         generateBoard();
         //get a valid list based on the grid
         validList = generateValidList(board);
-
-//        for (String words: validList)
-//            System.out.println(words);
 
     }
 
@@ -59,14 +52,9 @@ public class BoogleDictionary
      * For the testing
      * @param validList
      */
-    public BoogleDictionary(ArrayList<String> validList){
+    public BoogleDictionary(ArrayList<String> validList, HashMap<String,Boolean> wordMap){
         this.validList = validList;
-    }
-
-    private void testAdd(){
-
-        validList.add("other");
-        validList.add("about");
+        this.wordMap = wordMap;
     }
 
     /**
@@ -104,16 +92,29 @@ public class BoogleDictionary
 
     public void iterate(){
 
-        for(String key: wordMap.keySet())
-        {
+        if (wordMap.isEmpty()){
 
-            if (getValue(key))
-                correctWords += key +"\n";
+            correctWords = "";
+            wrongWords = "";
 
-            else
-                wrongWords += key +"\n";
-            //if you uncomment below code, it will throw java.util.ConcurrentModificationException
-            //studentGrades.remove("Alan");
+            System.out.println("word map is empty");
+        }
+
+        else {
+            for (String key : wordMap.keySet()) {
+
+                if (getValue(key)){
+                    correctWords += key + "\n";
+                    System.out.println("correct words: " + correctWords);
+                }
+
+                else{
+                    wrongWords += key + "\n";
+                    System.out.println("wrong words: "+ wrongWords);
+                }
+                //if you uncomment below code, it will throw java.util.ConcurrentModificationException
+                //studentGrades.remove("Alan");
+            }
         }
 
     }
@@ -160,7 +161,7 @@ public class BoogleDictionary
                 {
                     String word = prefix+ newBoard[i1][j1];
 
-                    if (dictionary.contains(word))
+                    if (list.contains(word))
                     {
                         validWords.add(word);
                     }
@@ -199,13 +200,13 @@ public class BoogleDictionary
     public boolean isValidPrefix(String prefix)
     {
         int lo = 0;
-        int hi = dictionary.size();
+        int hi = list.size();
 
         // when lo=hi, thats the target index
         while (lo<=hi)
         {
             int mid = lo + (hi-lo)/2;
-            String current = dictionary.get(mid);
+            String current = list.get(mid);
 
             if (current.startsWith(prefix))
                 return true;

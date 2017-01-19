@@ -22,13 +22,13 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BoogleDictionary dictionary;
+    public BoogleDictionary dictionary;
     private String typedWord = "";
     String result = "";
     public ArrayList<String> validList = new ArrayList<String>();
+    public static String correct = "";
+    public static String wrong = "";
 
-    public MainActivity() {
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -94,10 +94,6 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.button31)).setText(String.valueOf(board[3][1]));
         ((Button)findViewById(R.id.button32)).setText(String.valueOf(board[3][2]));
         ((Button)findViewById(R.id.button33)).setText(String.valueOf(board[3][3]));
-
-
-
-
 
 
         // on click listener for all the buttons in the grid
@@ -346,6 +342,7 @@ public class MainActivity extends AppCompatActivity {
     // method to go to final Activity
     public void finish()
     {
+        showResult();
         clear();
         startActivity(new Intent(this, FinalActivity.class));
 
@@ -381,10 +378,33 @@ public class MainActivity extends AppCompatActivity {
     public void enter()
     {
         dictionary.putWord(typedWord); //wordList.add(word);
-        result += typedWord+"\n";
+        result += typedWord+", ";
         ((TextView)findViewById(R.id.userTyped)).setText(result);
         typedWord = "";
 
     }
+
+    public BoogleDictionary getDictionary(){
+
+        return dictionary;
+    }
+
+    public void showResult() {
+
+        dictionary.iterate();
+        correct = dictionary.getCorrect();
+        wrong = dictionary.getWrong();
+    }
+
+    public String showCorrect(){
+
+        return correct;
+    }
+
+    public String showWrong(){
+
+        return wrong;
+    }
+
 
 }

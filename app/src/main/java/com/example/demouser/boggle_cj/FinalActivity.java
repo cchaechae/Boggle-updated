@@ -11,26 +11,30 @@ import android.widget.Toast;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 
 public class FinalActivity extends AppCompatActivity {
 
-    private BoogleDictionary dictionary;
+    private String correct;
+    private String wrong;
+    private MainActivity mActivity= new MainActivity();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final);
 
         //load the words.txt file
-        AssetManager assetManager = getAssets();
-        try {
-            InputStream inputStream = assetManager.open("m_length_dictionary.txt");
-            dictionary = new BoogleDictionary(inputStream);
-            //use the text file as dictionary
-        } catch (IOException e) {
-            Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
-            toast.show();
-        }
+//        AssetManager assetManager = getAssets();
+//        try {
+//            InputStream inputStream = assetManager.open("words.txt");
+//            dictionary = new BoogleDictionary(inputStream);
+//            //use the text file as dictionary
+//        } catch (IOException e) {
+//            Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
+//            toast.show();
+//        }
 
         showResult();
 
@@ -44,11 +48,9 @@ public class FinalActivity extends AppCompatActivity {
 
     private void showResult() {
 
-        dictionary.iterate();
-
-        ((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
-        //((TextView)findViewById(R.id.correct)).setText(dictionary.getCorrect());
-        //((TextView)findViewById(R.id.wrong)).setText(dictionary.getWrong());
+        //((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
+        ((TextView)findViewById(R.id.correct)).setText(mActivity.showCorrect());
+        ((TextView)findViewById(R.id.wrong)).setText(mActivity.showWrong());
     }
 
     // reset method, from final activity back to start activity
