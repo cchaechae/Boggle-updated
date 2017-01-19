@@ -15,8 +15,9 @@ import java.util.HashMap;
 
 public class FinalActivity extends AppCompatActivity {
 
-    private String correct;
-    private String wrong;
+    private String correct = "";
+    private String wrong = "";
+    private String extra = "";
     private MainActivity mActivity= new MainActivity();
 
     @Override
@@ -28,9 +29,11 @@ public class FinalActivity extends AppCompatActivity {
         Intent intent = getIntent();
         correct = intent.getStringExtra(MainActivity.USER_CORRECT);
         wrong = intent.getStringExtra(MainActivity.USER_WRONG);
+        extra = intent.getStringExtra(MainActivity.EXTRA_WORDS);
 
         System.out.println("correct"+ correct);
         System.out.println("wrong" + wrong);
+        System.out.println("extra: " + extra);
 
         //load the words.txt file
 //        AssetManager assetManager = getAssets();
@@ -56,8 +59,9 @@ public class FinalActivity extends AppCompatActivity {
     private void showResult() {
 
         //((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
-        ((TextView)findViewById(R.id.correct)).setText(mActivity.showCorrect());
-        ((TextView)findViewById(R.id.wrong)).setText(mActivity.showWrong());
+        ((TextView)findViewById(R.id.correct)).setText(correct);
+        ((TextView)findViewById(R.id.wrong)).setText(wrong);
+        ((TextView)findViewById(R.id.extraWords)).setText("Words you have missed: \n" + extra);
     }
 
     // reset method, from final activity back to start activity

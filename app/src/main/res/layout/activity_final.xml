@@ -16,6 +16,12 @@
         android:layout_width="match_parent"
         android:layout_height="150dp">
 
+        <TextView
+            android:text="Words you have missed: \n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:id="@+id/extraWords" />
 
     </LinearLayout>
 

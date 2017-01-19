@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public ArrayList<String> validList = new ArrayList<String>();
     public String correct = "";
     public String wrong = "";
-
+    public String extra = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -340,7 +340,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static String USER_CORRECT = "com.example.demouser.USER_CORRECT";
-    public static String USER_WRONG = "com.example.demouser.Wrong";
+    public static String USER_WRONG = "com.example.demouser.USER_WRONG";
+    public static String EXTRA_WORDS = "com.example.demouser.EXTRA_WORDS";
 
     // method to go to final Activity
     public void finish()
@@ -348,9 +349,10 @@ public class MainActivity extends AppCompatActivity {
         showResult();
         clear();
         Intent finalActivity = new Intent(this, FinalActivity.class);
-        startActivity(finalActivity);
         finalActivity.putExtra(USER_CORRECT, correct);
         finalActivity.putExtra(USER_WRONG, wrong);
+        finalActivity.putExtra(EXTRA_WORDS, extra);
+        startActivity(finalActivity);
 
 
     }
@@ -359,7 +361,6 @@ public class MainActivity extends AppCompatActivity {
     {
        // clear the text
        typedWord = "";
-        ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
         // all button goes back to normal background color
         ((Button)findViewById(R.id.button00)).setBackgroundResource(android.R.drawable.btn_default);
         ((Button)findViewById(R.id.button01)).setBackgroundResource(android.R.drawable.btn_default);
@@ -388,7 +389,6 @@ public class MainActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.userTyped)).setText(result);
         clear();
 
-
     }
 
     public BoogleDictionary getDictionary(){
@@ -401,6 +401,8 @@ public class MainActivity extends AppCompatActivity {
         dictionary.iterate();
         correct = dictionary.getCorrect();
         wrong = dictionary.getWrong();
+
+        extra = dictionary.getExtra();
     }
 
     public String showCorrect(){

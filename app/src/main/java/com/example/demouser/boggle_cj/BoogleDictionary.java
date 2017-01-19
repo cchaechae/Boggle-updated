@@ -26,6 +26,7 @@ public class BoogleDictionary {
 
     public String correctWords = "";
     public String wrongWords = "";
+    public String extraWords = "";
 
     public char[][] board;
 
@@ -218,6 +219,18 @@ public class BoogleDictionary {
         }
 
         return false;
+    }
+
+    public String getExtra(){
+
+        for (String obj: validList){
+
+            if (!wordMap.containsKey(obj)){
+                extraWords += obj + ", ";
+            }
+        }
+
+        return extraWords;
     }
 
 
