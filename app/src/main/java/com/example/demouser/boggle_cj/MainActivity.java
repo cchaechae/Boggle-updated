@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity {
     private BoogleDictionary dictionary;
     private String typedWord = "";
     String result = "";
+    public ArrayList<String> validList = new ArrayList<String>();
+
+    public MainActivity() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -69,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button00)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button00)).setEnabled(false);
 
             }
         });
@@ -84,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button01)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button01)).setEnabled(false);
 
 
             }
@@ -100,7 +102,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button02)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button02)).setEnabled(false);
 
 
             }
@@ -116,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button03)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button03)).setEnabled(false);
 
 
             }
@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button10)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button10)).setEnabled(false);
 
 
             }
@@ -148,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button11)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button11)).setEnabled(false);
 
 
             }
@@ -164,7 +162,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button12)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button12)).setEnabled(false);
 
 
             }
@@ -180,7 +177,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button13)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button13)).setEnabled(false);
 
 
             }
@@ -196,7 +192,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button20)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button20)).setEnabled(false);
 
 
             }
@@ -212,7 +207,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button21)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button21)).setEnabled(false);
 
 
             }
@@ -229,7 +223,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button22)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button22)).setEnabled(false);
 
 
             }
@@ -245,7 +238,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button23)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button23)).setEnabled(false);
 
 
             }
@@ -261,7 +253,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button30)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button30)).setEnabled(false);
 
 
             }
@@ -277,7 +268,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button31)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button31)).setEnabled(false);
 
 
             }
@@ -293,7 +283,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button32)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button32)).setEnabled(false);
 
 
             }
@@ -309,7 +298,6 @@ public class MainActivity extends AppCompatActivity {
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
                 ((Button)findViewById(R.id.button33)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
-                ((Button)findViewById(R.id.button33)).setEnabled(false);
 
 
             }
@@ -320,13 +308,16 @@ public class MainActivity extends AppCompatActivity {
         //load the words.txt file
         AssetManager assetManager = getAssets();
         try {
-            InputStream inputStream = assetManager.open("m_length_dictionary.txt");
+            InputStream inputStream = assetManager.open("words.txt");
             dictionary = new BoogleDictionary(inputStream);
             //use the text file as dictionary
         } catch (IOException e) {
             Toast toast = Toast.makeText(this, "Could not load dictionary", Toast.LENGTH_LONG);
             toast.show();
         }
+
+        validList = dictionary.getValidList();
+
 
     }
 
