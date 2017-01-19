@@ -13,61 +13,77 @@
     android:weightSum="1">
 
     <GridLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
         android:columnCount="4"
         android:orientation="horizontal"
+        android:layout_gravity="center"
         android:layout_weight="0.50">
 
 
         <Button android:text="a"
-            android:id="@+id/button00" />
+            android:id="@+id/button00"
+            android:layout_width="80dp" />
 
         <Button android:text="b"
-            android:id="@+id/button01" />
+            android:id="@+id/button01"
+            android:layout_width="80dp" />
 
         <Button android:text="c"
-            android:id="@+id/button02" />
+            android:id="@+id/button02"
+            android:layout_width="80dp" />
 
         <Button android:text="d"
-            android:id="@+id/button03" />
+            android:id="@+id/button03"
+            android:layout_width="80dp" />
 
         <Button android:text="e"
-            android:id="@+id/button10" />
+            android:id="@+id/button10"
+            android:layout_width="80dp" />
 
         <Button android:text="f"
-            android:id="@+id/button11" />
+            android:id="@+id/button11"
+            android:layout_width="80dp" />
 
         <Button android:text="g"
-            android:id="@+id/button12" />
+            android:id="@+id/button12"
+            android:layout_width="80dp" />
 
         <Button android:text="h"
-            android:id="@+id/button13" />
+            android:id="@+id/button13"
+            android:layout_width="80dp" />
 
         <Button android:text="o"
-            android:id="@+id/button20" />
+            android:id="@+id/button20"
+            android:layout_width="80dp" />
 
         <Button android:text="s"
-            android:id="@+id/button21" />
+            android:id="@+id/button21"
+            android:layout_width="80dp" />
 
         <Button android:text="t"
-            android:id="@+id/button22" />
+            android:id="@+id/button22"
+            android:layout_width="80dp" />
 
         <Button android:text="r"
-            android:id="@+id/button23" />
+            android:id="@+id/button23"
+            android:layout_width="80dp"/>
 
         <Button android:text="13"
-            android:id="@+id/button30" />
+            android:id="@+id/button30"
+            android:layout_width="80dp" />
 
         <Button android:text="14"
-            android:id="@+id/button31" />
+            android:id="@+id/button31"
+            android:layout_width="80dp"/>
 
         <Button android:text="15"
-            android:id="@+id/button32" />
+            android:id="@+id/button32"
+            android:layout_width="80dp"/>
 
         <Button android:text="16"
-            android:id="@+id/button33" />
+            android:id="@+id/button33"
+            android:layout_width="80dp"/>
 
 
     </GridLayout>
@@ -81,17 +97,22 @@
 
         <TextView
             android:text="Typing Word"
+            android:fontFamily="casual"
             android:id="@+id/typingWord"
             android:textSize="40sp"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="70dp"
+            android:textColor="@color/missed"
             android:textAlignment="center"/>
 
         <TextView
             android:text="User Typed Words"
+            android:fontFamily="casual"
             android:layout_width="match_parent"
             android:id="@+id/userTyped"
             android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -104,6 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/clearButton"
+                android:background="@drawable/button_border"
                 android:layout_weight="1" />
 
             <Button
@@ -111,6 +133,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/enterButton"
+                android:background="@drawable/button_border"
                 android:layout_weight="1" />
 
             <Button
@@ -118,6 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/finishButton"
+                android:background="@drawable/button_border"
                 android:layout_weight="1" />
         </LinearLayout>
 

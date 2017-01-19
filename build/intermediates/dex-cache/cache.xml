@@ -39,15 +39,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_0689aea1006553b597325e4d59328415ccd845a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -57,11 +48,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/demouser/Boggle-updated/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.1.0_0689aea1006553b597325e4d59328415ccd845a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/demouser/Boggle-updated/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="a51f1810b45f55ae4d7ba2d389c9c88d719c7e94">
+        sha1="6edd08be6bc6cdcee5f3dbd43f26cf048ee2db0b">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0dd56b1747637649a5e74429c69aa575674a5010/classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="469edd6ca5e55a94159167eea82b5b530938e042">
+        sha1="a464497bbb6b3e137eee890007636b8735b23cf1">
         <dex dex="/Users/demouser/Boggle-updated/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7c8dec82ae5c2257c95c4bc2a591517e313c474c/classes.dex" />
     </item>
     <item

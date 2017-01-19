@@ -15,7 +15,8 @@ import java.util.Random;
  * Created by demouser on 1/13/17.
  */
 
-public class BoogleDictionary {
+public class BoogleDictionary
+{
 
     private static final int MIN_WORD_LENGTH = 3;
     private ArrayList<String> list = new ArrayList<String>();
@@ -30,7 +31,9 @@ public class BoogleDictionary {
     public String extraWords = "";
 
     public char[][] board = new char[4][4];
+
     Random random = new Random();
+
 
     public BoogleDictionary(InputStream wordListStream) throws IOException
     {
@@ -38,36 +41,31 @@ public class BoogleDictionary {
         BufferedReader in = new BufferedReader(new InputStreamReader(wordListStream));
         String line;
 
-        while((line = in.readLine()) != null) {
+        while((line = in.readLine()) != null)
+        {
             String word = line.trim();
+
             if (word.length() >= MIN_WORD_LENGTH)
                 list.add(word);
         }
 
-        //generate a new board
         generateBoard();
-        //get a valid list based on the grid
-        //if (validList.size()>5)
-        validList = generateValidList(board, validList);
-        //else
 
-        
-        while (validList.size()<5)
+        validList = generateValidList(board, validList);
+
+        while (validList.size()<5 || validList.size()>15)
         {
             generateBoard();
+
             ArrayList<String> newList = new ArrayList<String>();
             newList=  generateValidList(board, newList);
-
 
             validList = newList;
         }
 
     }
 
-    /**
-     * For the testing
-     * @param validList
-     */
+
     public BoogleDictionary(ArrayList<String> validList, HashMap<String,Boolean> wordMap){
         this.validList = validList;
         this.wordMap = wordMap;
@@ -79,9 +77,9 @@ public class BoogleDictionary {
      */
     public void putWord(String obj)
     {
-
         wordMap.put(obj, checkWord(obj));
     }
+
 
     public boolean checkWord(String obj)
     {
@@ -106,14 +104,16 @@ public class BoogleDictionary {
         return wordMap;
     }
 
+
     public void iterate(){
 
-        if (wordMap.isEmpty()){
+        if (wordMap.isEmpty())
+        {
 
             correctWords = "";
             wrongWords = "";
 
-            System.out.println("word map is empty");
+//            System.out.println("word map is empty");
         }
 
         else {
@@ -121,15 +121,14 @@ public class BoogleDictionary {
 
                 if (getValue(key)){
                     correctWords += key + "\n";
-                    System.out.println("correct words: " + correctWords);
+//                    System.out.println("correct words: " + correctWords);
                 }
 
                 else{
                     wrongWords += key + "\n";
-                    System.out.println("wrong words: "+ wrongWords);
+//                    System.out.println("wrong words: "+ wrongWords);
                 }
-                //if you uncomment below code, it will throw java.util.ConcurrentModificationException
-                //studentGrades.remove("Alan");
+
             }
         }
 
@@ -141,59 +140,10 @@ public class BoogleDictionary {
         return correctWords;
     }
 
+
     public String getWrong(){
 
         return wrongWords;
-    }
-
-
-    public ArrayList<String> generateValidList(char[][] newBoard, ArrayList<String> inputList)
-    {
-        if (newBoard == null)
-        {
-            throw new NullPointerException("The matrix cannot be null");
-        }
-
-        for (int i = 0; i < newBoard.length; i++)
-        {
-            for (int j = 0; j < newBoard[0].length; j++)
-            {
-                generateList(newBoard, i, j, newBoard[i][j] + "", inputList);
-            }
-        }
-        return inputList;
-    }
-
-    private void generateList(char[][] newBoard, int i, int j, String prefix, List<String> validWords)
-    {
-        assert newBoard != null;
-        assert validWords != null;
-
-        for (int i1 = Math.max(0, i - 1); i1 < Math.min(newBoard.length, i + 2); i1++)
-        {
-            for (int j1 = Math.max(0, j - 1); j1 < Math.min(newBoard[0].length, j + 2); j1++)
-            {
-                if (i1 != i || j1 != j)
-                {
-                    String word = prefix+ newBoard[i1][j1];
-
-                    if (list.contains(word))
-                    {
-                        validWords.add(word);
-                    }
-
-                    if (isValidPrefix(word))
-                    {
-                        generateList(newBoard, i1, j1, word, validWords);
-                    }
-                }
-            }
-        }
-    }
-
-    public ArrayList<String> getValidList()
-    {
-        return validList;
     }
 
     // generate a random grid
@@ -216,14 +166,68 @@ public class BoogleDictionary {
         return board;
     }
 
-    // check if there is word starting with this prefix
+
+    public ArrayList<String> generateValidList(char[][] newBoard, ArrayList<String> inputList)
+    {
+        if (newBoard == null)
+        {
+            throw new NullPointerException("The board cannot be null");
+        }
+
+        for (int i = 0; i < newBoard.length; i++)
+        {
+            for (int j = 0; j < newBoard[0].length; j++)
+            {
+                generateList(newBoard, i, j, newBoard[i][j] + "", inputList);
+            }
+        }
+        return inputList;
+    }
+
+
+    private void generateList(char[][] newBoard, int row, int column, String prefix, List<String> validWords)
+    {
+        assert newBoard != null;
+        assert validWords != null;
+
+        for (int i = Math.max(0, row - 1); i < Math.min(newBoard.length, row + 2); i++)
+        {
+            for (int j = Math.max(0, column - 1); j < Math.min(newBoard[0].length, column + 2); j++)
+            {
+                if (i != row || j != column)
+                {
+                    String word = prefix+ newBoard[i][j];
+
+                    if (list.contains(word))
+                    {
+                        validWords.add(word);
+                    }
+
+                    if (isValidPrefix(word))
+                    {
+                        generateList(newBoard, i, j, word, validWords);
+                    }
+                }
+            }
+        }
+    }
+
+
+    public ArrayList<String> getValidList()
+    {
+        return validList;
+    }
+
+
+
+    // check if there is word starting with this prefix using binary search
     public boolean isValidPrefix(String prefix)
     {
         int lo = 0;
         int hi = list.size();
 
         // when lo=hi, thats the target index
-        while (lo<hi)
+        while (lo < hi)
         {
             int mid = lo + (hi-lo)/2;
 
@@ -256,3 +260,4 @@ public class BoogleDictionary {
 
 
 }
+

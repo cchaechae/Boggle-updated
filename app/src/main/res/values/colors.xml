@@ -6,5 +6,5 @@
     <color name="clickedButton">#C4BDC7</color>
     <color name="wrong">#f46542</color>
     <color name="correct">#15a350</color>
-    <color name="missed">#ad2494</color>
+    <color name="missed">#4e8bba</color>
 </resources>
