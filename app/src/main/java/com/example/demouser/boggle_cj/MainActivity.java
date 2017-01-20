@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public String correct = "";
     public String wrong = "";
     public String extra = "";
+    private String boggleBoardText = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -353,11 +354,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        boggleBoardText = dictionary.getBoardText();
+
     }
 
     public static String USER_CORRECT = "com.example.demouser.USER_CORRECT";
     public static String USER_WRONG = "com.example.demouser.USER_WRONG";
     public static String EXTRA_WORDS = "com.example.demouser.EXTRA_WORDS";
+    public static String BOARD_TEXT = "com.example.demouser.BOARD_TEXT";
 
     // method to go to final Activity
     public void finish()
@@ -368,6 +372,9 @@ public class MainActivity extends AppCompatActivity {
         finalActivity.putExtra(USER_CORRECT, correct);
         finalActivity.putExtra(USER_WRONG, wrong);
         finalActivity.putExtra(EXTRA_WORDS, extra);
+        finalActivity.putExtra(EXTRA_WORDS, boggleBoardText);
+
+
         startActivity(finalActivity);
 
 
@@ -396,6 +403,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
 
         ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
+
 
     }
 

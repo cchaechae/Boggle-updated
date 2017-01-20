@@ -7,9 +7,11 @@ import java.io.InputStreamReader;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 /**
  * Created by demouser on 1/13/17.
@@ -62,6 +64,11 @@ public class BoogleDictionary
 
             validList = newList;
         }
+
+        Set<String> temp = new HashSet<>();
+        temp.addAll(validList);
+        validList.clear();
+        validList.addAll(temp);
 
     }
 
@@ -257,6 +264,24 @@ public class BoogleDictionary
 
         return extraWords;
     }
+
+    public String getBoardText()
+    {
+        String result = "";
+        for (int i = 0; i< board.length; i++)
+        {
+            for (int j = 0; j <board[0].length; j++)
+            {
+                result += String.valueOf(board[i][j]) + " ";
+            }
+            result += "\n";
+        }
+
+        System.out.println(result);
+        return result;
+
+    }
+
 
 
 }

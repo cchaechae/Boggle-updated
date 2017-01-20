@@ -18,6 +18,7 @@ public class FinalActivity extends AppCompatActivity {
     private String correct = "";
     private String wrong = "";
     private String extra = "";
+    private String boardText = "";
     private MainActivity mActivity= new MainActivity();
 
     @Override
@@ -30,6 +31,8 @@ public class FinalActivity extends AppCompatActivity {
         correct = intent.getStringExtra(MainActivity.USER_CORRECT);
         wrong = intent.getStringExtra(MainActivity.USER_WRONG);
         extra = intent.getStringExtra(MainActivity.EXTRA_WORDS);
+        boardText  = intent.getStringExtra(MainActivity.BOARD_TEXT);
+
 
         System.out.println("correct"+ correct);
         System.out.println("wrong" + wrong);
@@ -58,10 +61,12 @@ public class FinalActivity extends AppCompatActivity {
 
     private void showResult() {
 
+        ((TextView)findViewById(R.id.boggleBoardText)).setText(boardText);
         //((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
         ((TextView)findViewById(R.id.correct)).setText(correct);
         ((TextView)findViewById(R.id.wrong)).setText(wrong);
-        ((TextView)findViewById(R.id.extraWords)).setText("Words you have missed: \n" + extra);
+        ((TextView)findViewById(R.id.extraWords)).setText("Missed Words: \n" + extra);
+
     }
 
     // reset method, from final activity back to start activity
