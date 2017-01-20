@@ -37,22 +37,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ((Button)findViewById(R.id.button00)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button01)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button02)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button03)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button10)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button11)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button12)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button13)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button20)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button21)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button22)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button23)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button30)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button31)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button32)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button00)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button01)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button02)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button03)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button10)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button11)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button12)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button13)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button20)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button21)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button22)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button23)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button30)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button31)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button32)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button33)).setBackgroundResource(R.drawable.charbutton_boarder);
 
         //load the words.txt file
         AssetManager assetManager = getAssets();
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button00)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button00)).setBackgroundResource(R.drawable.char_button_clicked);
 
             }
         });
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button01)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button01)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button02)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button02)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button03)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button03)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button10)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button10)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button11)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button11)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button12)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button12)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button13)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button13)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -242,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button20)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button20)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -257,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button21)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button21)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -273,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button22)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button22)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -288,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button23)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button23)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -303,7 +303,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button30)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button30)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -318,7 +318,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button31)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button31)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -333,7 +333,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button32)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button32)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -348,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
                 // update text view
                 ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
                 // set the button to a clicked color
-                ((Button)findViewById(R.id.button33)).setBackgroundColor(getResources().getColor(R.color.clickedButton));
+                ((Button)findViewById(R.id.button33)).setBackgroundResource(R.drawable.char_button_clicked);
 
 
             }
@@ -385,22 +385,22 @@ public class MainActivity extends AppCompatActivity {
        // clear the text
        typedWord = "";
         // all button goes back to normal background color
-        ((Button)findViewById(R.id.button00)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button01)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button02)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button03)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button10)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button11)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button12)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button13)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button20)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button21)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button22)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button23)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button30)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button31)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button32)).setBackgroundResource(android.R.drawable.btn_default);
-        ((Button)findViewById(R.id.button33)).setBackgroundResource(android.R.drawable.btn_default);
+        ((Button)findViewById(R.id.button00)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button01)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button02)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button03)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button10)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button11)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button12)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button13)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button20)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button21)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button22)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button23)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button30)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button31)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button32)).setBackgroundResource(R.drawable.charbutton_boarder);
+        ((Button)findViewById(R.id.button33)).setBackgroundResource(R.drawable.charbutton_boarder);
 
         ((TextView)findViewById(R.id.typingWord)).setText(typedWord);
 
