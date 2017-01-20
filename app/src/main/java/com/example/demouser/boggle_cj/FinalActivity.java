@@ -65,7 +65,7 @@ public class FinalActivity extends AppCompatActivity {
         //((TextView)findViewById(R.id.correct)).setText(dictionary.getValidList().toString());
         ((TextView)findViewById(R.id.correct)).setText(correct);
         ((TextView)findViewById(R.id.wrong)).setText(wrong);
-        ((TextView)findViewById(R.id.extraWords)).setText("Missed Words: \n" + extra);
+        ((TextView)findViewById(R.id.extraWords)).setText("Missed Words: " + extra);
 
     }
 
